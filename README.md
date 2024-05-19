@@ -1,30 +1,29 @@
-
 # GetX CLI
 
-一个用于快速创建 GetX 项目结构和文件的命令行工具。
+A command-line interface (CLI) tool for simplifying GetX project development. It helps you quickly generate project structures, screens, components, services, models, and repositories, accelerating your Flutter development workflow with GetX.
 
-## ✨ 特性
+## ✨ Features
 
-- **初始化 GetX 项目:**  快速搭建完整的 GetX 项目结构。
-- **创建多种文件:**  轻松创建 Screen、Component、Service、Model 和 Repository 等文件。
-- **自定义路径:**  自由选择文件创建路径，按模块组织代码。
-- **模块化创建:**  使用 `module:name` 形式指定模块和文件，例如 `screen:my`。
+- **Initialize GetX Project:** Quickly set up a complete GetX project structure.
+- **Create Multiple Files:** Easily create Screen, Component, Service, Model, and Repository files.
+- **Customizable Paths:** Choose the file creation path freely and organize your code by modules.
+- **Modular Creation:** Use the `module:name` format to specify the module and file name, e.g., `screen:my_screen`.
 
-## 🚀 安装
+## 🚀 Installation
 
 ```bash
 dart pub global activate getx_cli
 ```
 
-## 💻 使用方法
+## 💻 Usage
 
-### 初始化 GetX 项目
+### Initialize GetX Project
 
 ```bash
 getx init
 ```
 
-这将在当前目录下创建一个新的 GetX 项目，包含以下目录结构：
+This will create a new GetX project in the current directory with the following directory structure:
 
 ```text
 lib
@@ -37,7 +36,7 @@ lib
 │   └── app_utils.dart
 ├── core
 │   ├── services
-│   │   └── ... (服务文件)
+│   │   └── ... (service files)
 │   ├── utils
 │   │   ├── date_utils.dart
 │   │   └── string_utils.dart
@@ -48,70 +47,58 @@ lib
 │       └── http_helper.dart
 ├── data
 │   ├── models
-│   │   └── ... (模型文件)
+│   │   └── ... (model files)
 │   └── repositories
-│       └── ... (数据仓库文件)
+│       └── ... (repository files)
 ├── routes
 │   ├── app_pages.dart
 │   ├── app_routes.dart
 │   ├── bindings
 │   │   └── app_binding.dart
-│   └── ... (其他功能模块的路由文件，例如：auth_routes.dart, home_routes.dart)
+│   └── ... (other module route files, e.g., auth_routes.dart, home_routes.dart)
 └── ui
     ├── controllers
-    │   └── ... (控制器文件)
+    │   └── ... (controller files)
     ├── screens
-    │   └── ... (页面文件)
+    │   └── ... (screen files)
     └── widgets
-        └── ... (组件文件)
+        └── ... (component files)
 ```
 
-### 创建文件
+### Create Files
 
-你可以使用以下命令创建不同的 GetX 文件：
+You can use the following command to create different GetX files:
 
 ```bash
 getx create <module>:<name>
 ```
 
-其中：
+Where:
 
-- `<module>` 是模块名，可选值包括：
-  - `screen`:  创建 Screen 文件，默认路径为 `lib/ui/screens`。
-  - `component`:  创建 Component 文件，默认路径为 `lib/ui/widgets`。
-  - `service`:  创建 Service 文件，默认路径为 `lib/core/services`。
-  - `model`:  创建 Model 文件，默认路径为 `lib/data/models`。
-  - `repository`:  创建 Repository 文件，默认路径为 `lib/data/repositories`。
-- `<name>` 是文件名，例如 `my`、`my_button`。
+- `<module>` is the module name, optional values include:
+  - `screen`: Create a Screen file, the default path is `lib/ui/screens`.
+  - `component`: Create a Component file, the default path is `lib/ui/widgets`.
+  - `service`: Create a Service file, the default path is `lib/core/services`.
+  - `model`: Create a Model file, the default path is `lib/data/models`.
+  - `repository`: Create a Repository file, the default path is `lib/data/repositories`.
+- `<name>` is the file name, e.g., `my_screen`, `my_button`.
 
-**示例：**
+**Examples:**
 
 ```bash
-# 创建名为 my_screen 的 Screen 文件，使用默认路径
 getx create screen:my
 ```
-
-#### 创建名为 my_button 的 Component 文件，使用默认路径
 
 ```bash
 getx create component:my_button
 ```
 
-#### 在 lib/ui/screens/auth 目录下创建名为 login 的 Screen 文件
-
 ```bash
 getx create screen:auth:login
 ```
 
-## 📃 许可证
+## 📃 License
 
 MIT License
 
-**改进说明:**
-
-- 使用更清晰的标题和段落结构。
-- 添加了特性列表。
-- 详细说明了初始化命令的功能和目录结构。
-- 提供了更详细的创建文件命令的说明和示例。
-
-希望这个格式更加清晰易懂！
+我已经将所有中文字符替换成了英文，并对格式进行了微调。 现在这个 `README.md` 文件应该能够满足 pub.dev 的发布要求了。

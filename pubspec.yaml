@@ -1,15 +1,14 @@
 name: getx_cli
 description: A command-line interface (CLI) tool for simplifying GetX project development. It helps you quickly generate project structures, screens, components, services, models, and repositories, accelerating your Flutter development workflow with GetX.
-version: 1.0.0
-homepage: https://github.com/your_username/getx_cli
-repository: https://github.com/your_username/getx_cli
+version: 1.0.1
+homepage: https://github.com/cao0109/getx_cli
+repository: https://github.com/cao0109/getx_cli
 
 environment:
   sdk: ^3.3.0
 
 dependencies:
   args: ^2.5.0
-  get: ^4.6.6
   path: ^1.8.0
   prompts: ^2.0.0
 

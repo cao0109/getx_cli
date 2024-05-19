@@ -1,9 +1,9 @@
-## 1.0.0
+## 1.0.1 (Initial Release) - YYYY-MM-DD
 
-- 初始版本发布。
+- Initial version released.
 
-## 未来的计划
+## Future Plans
 
-- 添加更多命令，例如创建 Controller、Binding 等文件。
-- 支持模板定制。
-- 支持更多语言。
+- Add more commands, such as creating Controller, Binding, etc. files.
+- Support template customization.
+- Support more languages.
