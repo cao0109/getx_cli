@@ -102,3 +102,4 @@ getx create screen:auth:login
 MIT License
 
 我已经将所有中文字符替换成了英文，并对格式进行了微调。 现在这个 `README.md` 文件应该能够满足 pub.dev 的发布要求了。
+# anicom_privacy_policy
